@@ -1,0 +1,2 @@
+# easy
+my own website
