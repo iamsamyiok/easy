@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iamsamyiok | AI Enthusiast</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0a0a0a;
+      color: white;
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, #00f6ff, #ff00ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1620712943543-bcc9466e7070?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .neon-shadow {
+      box-shadow: 0 0 10px #00f6ff, 0 0 20px #ff00ff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-[#0a0a0a] shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+      <a href="#" class="text-2xl font-bold gradient-text">iamsamyiok</a>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-[#00f6ff] transition">Home</a></li>
+        <li><a href="#about" class="hover:text-[#00f6ff] transition">About</a></li>
+        <li><a href="#projects" class="hover:text-[#00f6ff] transition">Projects</a></li>
+        <li><a href="#blog" class="hover:text-[#00f6ff] transition">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-bg py-20 text-center">
+    <div class="container mx-auto">
+      <h1 class="text-5xl md:text-6xl font-bold gradient-text">Welcome to iamsamyiok's World</h1>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+        I'm a passionate developer exploring the frontiers of AI and large language models. Dive into my projects and blog to see my journey!
+      </p>
+      <a href="#projects" class="mt-6 inline-block bg-[#00f6ff] text-[#0a0a0a] px-6 py-3 rounded-full hover:bg-[#ff00ff] transition">Explore Projects</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold gradient-text text-center">About Me</h2>
+    <div class="flex flex-col md:flex-row items-center mt-8">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=200&q=80" alt="Profile" class="w-48 h-48 rounded-full mb-6 md:mb-0 md:mr-8 neon-shadow" />
+      <div>
+        <p class="text-lg">
+          Hey there! I'm iamsamyiok, a solo developer fascinated by the potential of AI and large language models. I spend my days coding, experimenting with LLMs, and sharing my findings with the community.
+        </p>
+        <p class="mt-4">
+          My mission is to make AI accessible and fun for everyone. Check out my GitHub for projects or my blog for insights on the latest in AI.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold gradient-text text-center">My AI Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div class="bg-gray-900 p-6 rounded-lg neon-shadow hover:scale-105 transition">
+        <h3 class="text-xl font-bold gradient-text">AI Chatbot</h3>
+        <p class="mt-2">A locally-run chatbot using Ollama and Llama models, designed for private and secure conversations.</p>
+        <a href="https://github.com/iamsamyiok/ai-chatbot" class="mt-4 inline-block text-[#00f6ff] hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg neon-shadow hover:scale-105 transition">
+        <h3 class="text-xl font-bold gradient-text">Text Summarizer</h3>
+        <p class="mt-2">A transformer-based model for summarizing long documents, fine-tuned for accuracy.</p>
+        <a href="https://github.com/iamsamyiok/text-summarizer" class="mt-4 inline-block text-[#00f6ff] hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg neon-shadow hover:scale-105 transition">
+        <h3 class="text-xl font-bold gradient-text">Image Generator</h3>
+        <p class="mt-2">A Stable Diffusion-based tool for generating AI art from text prompts.</p>
+        <a href="https://github.com/iamsamyiok/image-generator" class="mt-4 inline-block text-[#00f6ff] hover:underline">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold gradient-text text-center">Blog Highlights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+      <div class="bg-gray-900 p-6 rounded-lg neon-shadow">
+        <h3 class="text-xl font-bold gradient-text">The Rise of Local LLMs</h3>
+        <p class="mt-2">Exploring why tools like Ollama are game-changers for running large language models offline.</p>
+        <a href="https://github.com/iamsamyiok/blog-posts" class="mt-4 inline-block text-[#00f6ff] hover:underline">Read More</a>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg neon-shadow">
+        <h3 class="text-xl font-bold gradient-text">Fine-Tuning Transformers</h3>
+        <p class="mt-2">A beginner’s guide to fine-tuning models like BERT for specific tasks.</p>
+        <a href="https://github.com/iamsamyiok/blog-posts" class="mt-4 inline-block text-[#00f6ff] hover:underline">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#0a0a0a] py-6">
+    <div class="container mx-auto text-center">
+      <p>© 2025 iamsamyiok. Built with Tailwind CSS.</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="https://github.com/iamsamyiok" class="hover:text-[#00f6ff] transition">GitHub</a>
+        <a href="https://x.com/iamsamyiok" class="hover:text-[#00f6ff] transition">X</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
